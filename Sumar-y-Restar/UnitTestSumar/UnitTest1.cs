@@ -23,5 +23,21 @@ namespace UnitTestSumar
 
 
         }
+        public void TestMultiply()
+        {
+            //Arrange 
+            SumaController sumaController = new SumaController();
+            int a = 3;
+            int b = 5;
+            int esperado = 15;
+
+            //Act
+            int resultado = sumaController.Multiply(a, b);
+
+            //Assert
+            Assert.AreEqual(esperado, resultado);
+
+
+        }
     }
 }
